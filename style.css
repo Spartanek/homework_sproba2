@@ -125,19 +125,10 @@ ol {
 }
 .firstImgs {
   margin: 0 auto;
-}
-.img0 {
   width: 370px;
   height: 294px;
 }
-.img1 {
-  width: 370px;
-  height: 294px;
-}
-.img2 {
-  width: 370px;
-  height: 294px;
-}
+
 .teammates {
   width: 264px;
   height: 42px;
@@ -154,7 +145,7 @@ ol {
   color: #212121;
 }
 .Name {
-  width: 129px;
+  width: 130px;
   height: 19px;
 
   font-family: 'Roboto';
@@ -170,7 +161,7 @@ ol {
   color: #212121;
 }
 .occupation {
-  width: 130px;
+  width: 76px;
   height: 19px;
 
   font-family: 'Roboto';
@@ -182,9 +173,22 @@ ol {
 
   text-align: center;
   letter-spacing: 0.03em;
+
+  color: #757575;
 }
 .secondImgs {
-  margin: 0 auto;
   width: 270px;
   height: 260px;
+
+  border-radius: 0px;
+}
+#team {
+  background: #f5f4fa;
+  width: 1600px;
+  height: 648px;
+}
+#footer {
+  width: 1600px;
+  height: 252px;
+  background: #2f303a;
 }
