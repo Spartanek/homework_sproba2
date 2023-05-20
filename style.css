@@ -145,9 +145,8 @@ ol {
   color: #212121;
 }
 .Name {
-  width: 130px;
   height: 19px;
-
+  max-width: 163px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -161,7 +160,6 @@ ol {
   color: #212121;
 }
 .occupation {
-  width: 76px;
   height: 19px;
 
   font-family: 'Roboto';
@@ -180,15 +178,25 @@ ol {
   width: 270px;
   height: 260px;
 
+  background: url(2968);
   border-radius: 0px;
 }
 #team {
   background: #f5f4fa;
-  width: 1600px;
-  height: 648px;
 }
 #footer {
   width: 1600px;
   height: 252px;
   background: #2f303a;
+}
+.list {
+  width: 270px;
+  height: 368px;
+
+  background: #ffffff;
+  /* material shadow v1 */
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
