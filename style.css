@@ -13,11 +13,12 @@ ol {
   width: 145px;
   height: 31px;
 
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
+
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -26,8 +27,7 @@ ol {
 .a {
   width: 45px;
   height: 16px;
-
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -39,7 +39,7 @@ ol {
   width: 72px;
   height: 16px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -52,7 +52,7 @@ ol {
   width: 64px;
   height: 16px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -65,7 +65,7 @@ ol {
   width: 122px;
   height: 16px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -78,7 +78,7 @@ ol {
   width: 135px;
   height: 16px;
   color: #757575;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -90,7 +90,7 @@ ol {
   height: 120px;
   margin: 0 auto;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -125,7 +125,7 @@ ol {
 
   margin: 0 auto;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -139,7 +139,7 @@ ol {
   width: 366px;
   height: 42px;
   margin: 0 auto;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -159,7 +159,7 @@ ol {
   width: 264px;
   height: 42px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -173,28 +173,27 @@ ol {
 .Name {
   height: 19px;
   max-width: 163px;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+
   /* identical to box height */
 
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: #212121;
 }
 .occupation {
   height: 19px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -230,7 +229,7 @@ ol {
   width: 231px;
   height: 21px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -245,7 +244,7 @@ ol {
   width: 136px;
   height: 21px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -260,7 +259,7 @@ ol {
   width: 231px;
   height: 21px;
 
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -270,4 +269,33 @@ ol {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+.sagolovokSkladovoi {
+  width: 270px;
+  height: 16px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.textSkladovoi {
+  width: 270px;
+  height: 72px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
 }
