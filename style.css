@@ -8,11 +8,14 @@
   --color-telemailHeader: #757575;
   /* білий текст */
   --color-white: #ffffff;
-
-  --background: #2f303a;
-  --background: #ffffff99;
-  --background: #ececec;
-  --background: #f5f4fa;
+  /* застосувалось в шрифті кноппки */
+  --color-button: #2f303a;
+  /* наче для email та tel footer */
+  --color-telemailFooter: #ffffff99;
+  /* наче для background'у midsection */
+  --background-midsection: #ececec;
+  /* background portfolio */
+  --background-portfolio: #f5f4fa;
 }
 
 html {
@@ -136,7 +139,7 @@ span[class='logo'] {
 .hero {
   text-align: center;
 
-  background: #2f303a;
+  background: var(--color-button);
 }
 .hero_button-text {
   display: block;
@@ -228,12 +231,12 @@ span[class='logo'] {
   border-radius: 0px;
 }
 #team {
-  background: #f5f4fa;
+  background: var(--background-portfolio);
 }
 #footer {
   width: 1600px;
   height: 252px;
-  background: #2f303a;
+  background: var(--color-button);
 }
 .list {
   width: 270px;
@@ -274,7 +277,7 @@ span[class='logo'] {
 
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-telemailFooter);
 }
 .telFooter {
   width: 231px;
@@ -289,7 +292,7 @@ span[class='logo'] {
 
   letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-telemailFooter);
 }
 .sagolovok-portfolio {
   width: 270px;
@@ -319,4 +322,7 @@ span[class='logo'] {
   letter-spacing: 0.03em;
 
   color: var(--color-telemailHeader);
+}
+.midsitesection {
+  background-color: var(--background-midsection);
 }
