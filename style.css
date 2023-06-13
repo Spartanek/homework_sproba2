@@ -1,3 +1,20 @@
+:root {
+  /* Перший колір для web, другий для studio */
+  --color-weblogo: #2196f3;
+  --color-studiologo: #000000;
+  /* щось типу заголовку */
+  --color-likeheader: #212121;
+  /* email та tel в header  */
+  --color-telemailHeader: #757575;
+  /* білий текст */
+  --color-white: #ffffff;
+
+  --background: #2f303a;
+  --background: #ffffff99;
+  --background: #ececec;
+  --background: #f5f4fa;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,13 +39,12 @@ ol {
   /* identical to box height */
 
   letter-spacing: 0.03em;
-  color: #2196f3;
 }
 a[class='logo'] {
-  color: black;
+  color: var(--color-studiologo);
 }
 span[class='logo'] {
-  color: blue;
+  color: var(--color-weblogo);
 }
 .nav-studio {
   width: 45px;
@@ -39,7 +55,7 @@ span[class='logo'] {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .nav-portfolio {
   width: 72px;
@@ -52,7 +68,7 @@ span[class='logo'] {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .nav-contacts {
   width: 64px;
@@ -65,7 +81,7 @@ span[class='logo'] {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .tel {
   width: 122px;
@@ -78,12 +94,12 @@ span[class='logo'] {
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--color-telemailHeader);
 }
 .email {
   width: 135px;
   height: 16px;
-  color: #757575;
+  color: var(--color-telemailHeader);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -111,12 +127,11 @@ span[class='logo'] {
   width: 216px;
   height: 50px;
 
-  background: #2196f3;
+  background-color: var(--color-weblogo);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   outline: none;
   border: none;
-  color: #ffffff;
 }
 .hero {
   text-align: center;
@@ -139,7 +154,7 @@ span[class='logo'] {
 
   letter-spacing: 0.06em;
 
-  color: #ffffff;
+  color: var(--color-white);
 }
 .studio-h2 {
   width: 366px;
@@ -153,7 +168,7 @@ span[class='logo'] {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .firstImgs {
   margin: 0 auto;
@@ -174,7 +189,7 @@ span[class='logo'] {
   letter-spacing: 0.03em;
   margin: 0 auto;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .Name {
   height: 19px;
@@ -189,7 +204,7 @@ span[class='logo'] {
 
   text-align: center;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .occupation {
   height: 19px;
@@ -203,7 +218,7 @@ span[class='logo'] {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--color-telemailHeader);
 }
 .secondImgs {
   width: 270px;
@@ -224,7 +239,7 @@ span[class='logo'] {
   width: 270px;
   height: 368px;
 
-  background: #ffffff;
+  background: var(--color-white);
   /* material shadow v1 */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -244,7 +259,7 @@ span[class='logo'] {
 
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--color-white);
 }
 .emailFooter {
   width: 136px;
@@ -288,7 +303,7 @@ span[class='logo'] {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--color-likeheader);
 }
 .text-portfolio {
   width: 270px;
@@ -303,5 +318,5 @@ span[class='logo'] {
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--color-telemailHeader);
 }
