@@ -9,7 +9,7 @@ ul,
 ol {
   list-style: none;
 }
-.webstudio {
+.logo {
   width: 145px;
   height: 31px;
 
@@ -24,7 +24,13 @@ ol {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
-.a {
+a[class='logo'] {
+  color: black;
+}
+span[class='logo'] {
+  color: blue;
+}
+.nav-studio {
   width: 45px;
   height: 16px;
   font-family: 'Roboto', sans-serif;
@@ -35,7 +41,7 @@ ol {
   letter-spacing: 0.02em;
   color: #212121;
 }
-.b {
+.nav-portfolio {
   width: 72px;
   height: 16px;
 
@@ -48,7 +54,7 @@ ol {
 
   color: #212121;
 }
-.c {
+.nav-contacts {
   width: 64px;
   height: 16px;
 
@@ -135,7 +141,7 @@ ol {
 
   color: #ffffff;
 }
-.whatRWeDoing {
+.studio-h2 {
   width: 366px;
   height: 42px;
   margin: 0 auto;
@@ -270,7 +276,7 @@ ol {
 
   color: rgba(255, 255, 255, 0.6);
 }
-.sagolovokSkladovoi {
+.sagolovok-portfolio {
   width: 270px;
   height: 16px;
 
@@ -284,7 +290,7 @@ ol {
 
   color: #212121;
 }
-.textSkladovoi {
+.text-portfolio {
   width: 270px;
   height: 72px;
 
