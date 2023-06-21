@@ -17,6 +17,9 @@
   /* background portfolio */
   --background-portfolio: #f5f4fa;
 }
+* {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -26,8 +29,10 @@ a {
   color: blue;
 }
 ul,
-ol {
+ol,
+li {
   list-style: none;
+  padding: 0;
 }
 .logo {
   width: 145px;
@@ -113,7 +118,6 @@ span[class='logo'] {
 .hero__heading {
   width: 696px;
   height: 120px;
-  margin: 0 auto;
 
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -125,6 +129,8 @@ span[class='logo'] {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0px;
 }
 .hero__button {
   width: 216px;
@@ -135,11 +141,16 @@ span[class='logo'] {
   border-radius: 4px;
   outline: none;
   border: none;
+  padding: 10px 32px;
+  margin-top: 45px;
+  margin-bottom: 183px;
 }
 .hero {
   text-align: center;
-
+  width: 1600px;
+  height: 600px;
   background: var(--color-button);
+  padding: 212px 437px 268px 467px;
 }
 .hero_button-text {
   display: block;
@@ -237,6 +248,9 @@ span[class='logo'] {
   width: 1600px;
   height: 252px;
   background: var(--color-button);
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .list {
   width: 270px;
@@ -273,6 +287,8 @@ span[class='logo'] {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 9px;
+
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -288,6 +304,7 @@ span[class='logo'] {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  padding-top: 9px;
   /* or 171% */
 
   letter-spacing: 0.03em;
