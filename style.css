@@ -64,6 +64,7 @@ li {
   letter-spacing: 0.03em;
   color: var(--color-white);
   margin-bottom: 20px;
+  display: block;
 }
 .spanlogo {
   color: var(--color-weblogo);
@@ -139,13 +140,15 @@ li {
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
   /* or 136% */
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
-  margin: 0px;
 }
 .hero__button {
   width: 216px;
@@ -157,15 +160,16 @@ li {
   outline: none;
   border: none;
   padding: 10px 32px;
-  margin-top: 45px;
-  margin-bottom: 183px;
+  display: block;
+  margin: 0 auto;
 }
 .hero {
   text-align: center;
   width: 1600px;
   height: 600px;
   background: var(--color-button);
-  padding: 212px 437px 268px 467px;
+  padding-bottom: 200px;
+  padding-top: 212px;
 }
 .hero_button-text {
   display: block;
@@ -265,7 +269,6 @@ li {
   background: var(--color-button);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
 .list {
   width: 270px;
@@ -287,12 +290,13 @@ li {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+  display: block;
+  margin-bottom: 9px;
   /* or 171% */
 
   letter-spacing: 0.03em;
 
   color: var(--color-white);
-  margin-bottom: 9px;
 }
 .emailFooter {
   width: 136px;
@@ -327,6 +331,10 @@ li {
 
   color: var(--color-telemailFooter);
 }
+.liemailfooter {
+  margin-bottom: 9px;
+}
+
 .sagolovok-portfolio {
   width: 270px;
   height: 16px;
