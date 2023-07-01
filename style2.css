@@ -258,37 +258,14 @@ li {
   width: 370px;
   height: 294px;
 }
-.button1 {
-  width: 73px;
+.button {
   height: 38px;
   border-radius: 4px;
   background: #f5f4fa;
+  padding: 6px 22px;
 }
-.button2 {
-  width: 125px;
-  height: 38px;
-  border-radius: 4px;
-  background: #f5f4fa;
-}
-.button3 {
-  width: 112px;
-  height: 38px;
-  border-radius: 4px;
-  background: #f5f4fa;
-}
-.button4 {
-  border-radius: 4px;
-  background: #f5f4fa;
-  width: 103px;
-  height: 38px;
-}
-.button5 {
-  border-radius: 4px;
-  width: 130px;
-  height: 38px;
-  background: #f5f4fa;
-}
-.text-button1 {
+
+.text-button {
   color: #212121;
   text-align: center;
   font-size: 16px;
@@ -298,52 +275,19 @@ li {
   line-height: 26px;
   letter-spacing: 0.48px;
 }
-.text-button2 {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
+.text-button:hover {
+  color: #fff;
 }
-.text-button3 {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
-}
-.text-button4 {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
-}
-.text-button5 {
-  color: #212121;
-  text-align: center;
-  font-size: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0.48px;
-}
+
 button:hover {
   border-radius: 4px;
   background: #2196f3;
   /* shadow-middle */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+button:hover span {
   color: #fff;
 }
 
