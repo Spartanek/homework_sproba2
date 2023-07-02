@@ -17,7 +17,7 @@
   /* background portfolio */
   --background-portfolio: #f5f4fa;
 }
-.nav-contacts {
+/* .nav-contacts {
   width: 64px;
   height: 16px;
 
@@ -29,29 +29,12 @@
   letter-spacing: 0.02em;
 
   color: var(--color-likeheader);
-}
+} */
 .nav-contacts:hover {
   color: var(--color-weblogo);
 }
-.email {
-  width: 135px;
-  height: 16px;
-  color: var(--color-telemailHeader);
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  margin-right: 50px;
-}
-.email:hover {
-  color: var(--color-weblogo);
-}
-.tel {
-  width: 122px;
-  height: 16px;
 
+.infa {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -61,10 +44,14 @@
 
   color: var(--color-telemailHeader);
 }
-.tel:hover {
+.infa:hover {
   color: var(--color-weblogo);
 }
-.nav-studio {
+.lipp:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* .nav-studio {
   width: 45px;
   height: 16px;
   font-family: 'Roboto', sans-serif;
@@ -75,11 +62,11 @@
   letter-spacing: 0.02em;
   color: var(--color-likeheader);
   margin-right: 50px;
-}
+} */
 .nav-studio:hover {
   color: var(--color-weblogo);
 }
-.nav-portfolio {
+/* .nav-portfolio {
   width: 72px;
   height: 16px;
 
@@ -92,7 +79,7 @@
   margin-right: 50px;
 
   color: var(--color-likeheader);
-}
+} */
 .nav-portfolio:hover {
   color: var(--color-weblogo);
 }
@@ -118,12 +105,28 @@
 .ulrow {
   display: flex;
   margin-right: 344px;
+  align-items: center;
+}
+.ulrow-item:not(:last-child) {
+  margin-right: 30px;
+}
+.ulrow-li {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--color-likeheader);
 }
 .ulrowdet {
   display: flex;
+  align-items: center;
 }
 .flexdivheader {
   display: flex;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -136,9 +139,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.spanlogo {
-  color: var(--color-weblogo);
-}
+
 .liemailfooter {
   margin-bottom: 9px;
 }
@@ -188,9 +189,7 @@
   margin-bottom: 94px;
   border-bottom: 1px solid #ececec;
 }
-.flexdivheader {
-  display: flex;
-}
+
 .adress {
   width: 231px;
   height: 21px;
