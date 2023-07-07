@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   /* Перший колір для web, другий для studio */
   --color-weblogo: #2196f3;
@@ -207,11 +212,6 @@
 
   color: var(--color-white);
 }
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 html {
   scroll-behavior: smooth;
@@ -274,9 +274,6 @@ li {
   line-height: 26px;
   letter-spacing: 0.48px;
 }
-.text-button:hover {
-  color: #fff;
-}
 
 button:hover {
   border-radius: 4px;
@@ -286,6 +283,16 @@ button:hover {
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
+ul,
+li,
+ol {
+  list-style: none;
+}
+/* видалити цей код, і буде дивно, питання */
+ul {
+  display: flex;
+}
+
 button:hover span {
   color: #fff;
 }
