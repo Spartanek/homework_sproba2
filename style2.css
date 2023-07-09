@@ -288,10 +288,6 @@ li,
 ol {
   list-style: none;
 }
-/* видалити цей код, і буде дивно, питання */
-ul {
-  display: flex;
-}
 
 button:hover span {
   color: #fff;
@@ -340,6 +336,10 @@ button:hover span {
   display: flex;
   justify-content: center;
 }
+/* видалити цей код, і буде дивно, питання */
+/* ul {
+  display: flex;
+} */
 .marbut {
   margin-right: 30px;
 }
