@@ -1,0 +1,374 @@
+:root {
+  --color-hover: #2196f3;
+  --color-logo: #000;
+  --background-color: #fff;
+  --color-text1: #212121;
+  --color-text2: #757575;
+  --color-background-another: #f5f4fa;
+  --border-color: #afb1b8;
+  --background-footer: #2f303a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  /* чогось без inherit не виходить змінити колір тексту посилання */
+  color: inherit;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.logo {
+  color: var(--color-logo);
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.footer {
+  color: var(--background-color);
+}
+.text-logo-WEB {
+  color: var(--color-hover);
+}
+header {
+  padding: 24px 0px;
+  background: var(--background-color);
+}
+.container-header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.telAndEmail-header {
+  display: flex;
+  align-items: center;
+}
+.ul-nav {
+  display: flex;
+  align-items: center;
+}
+.nav-li {
+  color: var(--color-text1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.nav-li:hover {
+  color: var(--color-hover);
+}
+.nav-li:not(:last-child) {
+  margin-right: 50px;
+}
+.telAndEmail-header-item:hover {
+  color: var(--color-hover);
+}
+.telAndEmail-header-item:not(:last-child) {
+  margin-right: 50px;
+}
+.telAndEmail-header-item {
+  color: var(--color-text2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+
+/* прибрати базовий колір для посилань */
+/* svg для емейлу */
+.hero-section {
+  padding: 200px 0px;
+  background-image: url(./images3/img20.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.h3-hero {
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.hero-button {
+  width: 216px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: var(--color-hover);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  display: block;
+  margin: 0 auto;
+}
+.hero-button-text {
+  color: var(--background-color);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+/* звідси */
+.special-section {
+  display: flex;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+.ul-special {
+  display: flex;
+}
+/* до сюди, трохи не зрозумів як працює */
+.li-special::before {
+  content: '';
+  display: block;
+
+  width: 270px;
+  height: 120px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 4px;
+  background-color: var(--color-background-another);
+  margin-bottom: 30px;
+}
+.li-special:not(:last-child) {
+  margin-right: 30px;
+}
+.special-header {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.special-text {
+  width: 270px;
+  height: 72px;
+  flex-shrink: 0;
+
+  color: var(--color-text2);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.antena::before {
+  content: '';
+  background-image: url(./images3/antenna.svg);
+}
+.clock::before {
+  content: '';
+  background-image: url(./images3/clock.svg);
+}
+.computer::before {
+  content: '';
+  background-image: url(./images3/diagram.svg);
+}
+.astronaut::before {
+  content: '';
+  background-image: url(./images3/astronaut.svg);
+}
+.imgs-section {
+  padding-bottom: 94px;
+}
+.imgs-header {
+  color: var(--color-text1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.imgs-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.team-li {
+  width: 270px;
+  height: 428px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 4px 4px;
+  background: var(--background-color);
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team-header {
+  color: var(--color-text1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.p-header {
+  color: var(--color-text2);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 10px;
+}
+/* чи краще зробити через background */
+.team-img {
+  display: block;
+  width: 270px;
+  height: 260px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  /* background: url(<path-to-image>), lightgray -86.437px -3.457px / 196.208% 136.002% no-repeat; */
+}
+.team-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.team-heading {
+  color: var(--color-text1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.team-section {
+  padding: 90px 0px;
+  background-color: var(--color-background-another);
+}
+.companies-header {
+  color: var(--color-text1);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+.companies-section {
+  padding: 90px 0px;
+}
+.companies-ul {
+  display: flex;
+  justify-content: space-between;
+}
+.companies-li {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+.companies-img {
+  padding: 16px 32px;
+}
+/* наведення на svg */
+/* що краще використати margin чи padding */
+/* дивно вираховувало margin */
+.icon-ul {
+  display: flex;
+  margin: 30px 40px;
+  justify-content: space-between;
+}
+footer {
+  padding: 60px 0px;
+  background: #2f303a;
+}
+.adress {
+  width: 231px;
+  height: 21px;
+  flex-shrink: 0;
+  color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.telAndEmail-footer-item {
+  height: 21px;
+  flex-shrink: 0;
+  /* що з цим зробити, щоб занести у root */
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.telAndEmail-footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.icon-ul-footer {
+  display: flex;
+}
+/* дивно,що коли не зробив список, а зразу дав флекс футеру, то все центрувалось */
+.footer-section-flex {
+  display: flex;
+  align-items: center;
+}
+.p-list2footer {
+  color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-li:not(:last-child) {
+  margin-right: 70px;
+}
+/* як зробити коло */
+.icon-li-footer:not(:last-child) {
+  margin-right: 30px;
+}

@@ -336,6 +336,10 @@ button:hover span {
   display: flex;
   justify-content: center;
 }
+/* дивно, що не спрацювало */
+.ul-nav-buttons {
+  display: flex;
+}
 /* видалити цей код, і буде дивно, питання */
 /* ul {
   display: flex;
@@ -348,4 +352,25 @@ button:hover span {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+}
+.footer-section-flex {
+  display: flex;
+  align-items: center;
+}
+.footer-li:not(:last-child) {
+  margin-right: 70px;
+}
+.p-list2footer {
+  color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.icon-ul-footer {
+  display: flex;
 }
