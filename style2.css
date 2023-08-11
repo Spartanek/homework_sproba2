@@ -187,7 +187,6 @@
 .sectionheader {
   background-color: var(--color-white);
 
-  width: 1600px;
   height: 80px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -247,7 +246,6 @@ li {
   display: block;
 }
 #footer {
-  width: 1600px;
   height: 252px;
   background: var(--color-button);
   padding-top: 60px;

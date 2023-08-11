@@ -7,6 +7,7 @@
   --color-background-another: #f5f4fa;
   --border-color: #afb1b8;
   --background-footer: #2f303a;
+  --rgba: rgba(255, 255, 255, 0.6);
 }
 * {
   margin: 0;
@@ -17,8 +18,8 @@
 
 a {
   text-decoration: none;
-  /* чогось без inherit не виходить змінити колір тексту посилання */
-  color: inherit;
+  color: inherit; /*колір занести в клас елемента*/
+  /* щоб занести колір в тег "а", можна зробити через inherit, або дати клас саме тегу а, а потім тому класу дати колір */
 }
 
 ul,
@@ -94,8 +95,6 @@ header {
   letter-spacing: 0.28px;
 }
 
-/* прибрати базовий колір для посилань */
-/* svg для емейлу */
 .hero-section {
   padding: 200px 0px;
   background-image: url(./images3/img20.jpg);
@@ -110,7 +109,7 @@ header {
   font-size: 65px;
   font-style: normal;
   font-weight: 900;
-  line-height: 60px; /* 136.364% */
+  line-height: 60px;
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -121,7 +120,7 @@ header {
   flex-shrink: 0;
   border-radius: 4px;
   background: var(--color-hover);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 13px 21px 19px 6px rgba(41, 28, 128, 1);
   display: block;
   margin: 0 auto;
 }
@@ -132,12 +131,11 @@ header {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   letter-spacing: 0.96px;
 }
 /* звідси */
 .special-section {
-  display: flex;
   padding-top: 90px;
   padding-bottom: 120px;
 }
@@ -183,7 +181,7 @@ header {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
 }
 .antena::before {
@@ -222,13 +220,12 @@ header {
 }
 .team-li {
   width: 270px;
-  height: 428px;
+
   flex-shrink: 0;
   border-radius: 0px 0px 4px 4px;
   background: var(--background-color);
-  /* material shadow v1 */
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  /* на картинку не заходить */
+  box-shadow: inset 13px 21px 19px 6px rgba(173, 28, 173, 1);
 }
 .team-header {
   color: var(--color-text1);
@@ -239,6 +236,7 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+  margin-bottom: 10px;
 }
 .p-header {
   color: var(--color-text2);
@@ -278,7 +276,13 @@ header {
 }
 .team-section {
   padding: 90px 0px;
-  background-color: var(--color-background-another);
+  background: rgb(8, 2, 121);
+  background: linear-gradient(
+    18deg,
+    rgba(8, 2, 121, 1) 0%,
+    rgba(11, 154, 195, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 .companies-header {
   color: var(--color-text1);
@@ -305,17 +309,24 @@ header {
 .companies-img {
   padding: 16px 32px;
 }
-/* наведення на svg */
-/* що краще використати margin чи padding */
-/* дивно вираховувало margin */
+
 .icon-ul {
   display: flex;
-  margin: 30px 40px;
-  justify-content: space-between;
+
+  justify-content: center;
+  padding-bottom: 10px;
 }
 footer {
   padding: 60px 0px;
   background: #2f303a;
+  /* display: flex; */
+}
+.container-footer {
+  display: flex;
+  align-items: center;
+}
+.div-footer-1 {
+  margin-right: 75px;
 }
 .adress {
   width: 231px;
@@ -326,7 +337,7 @@ footer {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
   margin-bottom: 10px;
   margin-top: 20px;
@@ -335,12 +346,12 @@ footer {
   height: 21px;
   flex-shrink: 0;
   /* що з цим зробити, щоб занести у root */
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--rgba);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 171.429% */
+  line-height: 24px;
   letter-spacing: 0.42px;
 }
 .telAndEmail-footer-item:not(:last-child) {
@@ -354,6 +365,7 @@ footer {
   display: flex;
   align-items: center;
 }
+
 .p-list2footer {
   color: var(--background-color);
   font-family: 'Roboto', sans-serif;
@@ -368,7 +380,10 @@ footer {
 .footer-li:not(:last-child) {
   margin-right: 70px;
 }
-/* як зробити коло */
+
 .icon-li-footer:not(:last-child) {
+  margin-right: 30px;
+}
+.icon-li:not(:last-child) {
   margin-right: 30px;
 }
