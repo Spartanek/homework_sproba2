@@ -101,6 +101,8 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-top: 100px;
+  padding-bottom: 185px;
 }
 .h3-hero {
   color: var(--background-color);
